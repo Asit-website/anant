@@ -57,7 +57,7 @@
     transition: 0.5s;
 }
 .fancy-radius{
-    height: 850px;
+    height: 900px;
     max-height: 100%;
     object-fit: cover;
 }
@@ -67,17 +67,36 @@
     width: 100%;
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:882px){
     .fancy-radius{
       height: auto;
+}
+
+.single-promo-block.hover-image:hover:before {
+    opacity: 1;
+    -webkit-transition: all 0.17s ease-out 0.18s;
+    transition: all 0.17s ease-out 0.18s;
+  }
+  /* line 71, src/assets/scss/corporx/_promo.scss */
+  .single-promo-block.hover-image:hover:before, .single-promo-block.hover-image:hover:after {
+    top: 0;
+  }
+  /* line 74, src/assets/scss/corporx/_promo.scss */
+  .single-promo-block.hover-image:hover .promo-block-content h5, .single-promo-block.hover-image:hover .icon i {
+    color: #ffffff;
+  }
+  /* line 77, src/assets/scss/corporx/_promo.scss */
+  .single-promo-block.hover-image:hover .promo-block-content p {
+    color: rgba(255, 255, 255, 0.75);
+  }
 }
 
 @media only screen and (max-width:772px){
     .contact-us-content{
         margin-top: 25px;
-    }
+    } 
 }
-}
+
 </style>
 
 <body>
@@ -1242,10 +1261,10 @@
                         <h5 class="mb-4">Keep in touch</h5>
                         <p>Love to assist you!!</p>
                         <div class="btn-wrapper mt-4 abst">
-                            <span style="margin-right: 5px;" ><i class="fa-brands fa-facebook"></i></span>
+                            <!-- <span style="margin-right: 5px;" ><i class="fa-brands fa-facebook"></i></span>
                             <span style="margin-right: 5px;"><i class="fa-brands fa-twitter"></i></span>
                             <span style="margin-right: 5px;"><i class="fa-brands fa-google-plus-g"></i></span>
-                            <span style="margin-right: 5px;"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <span style="margin-right: 5px;"><i class="fa-brands fa-linkedin-in"></i></span> -->
                         </div>
                     </div>
                 </div>
